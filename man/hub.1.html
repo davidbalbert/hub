@@ -61,7 +61,7 @@
     <a href="#BUGS">BUGS</a>
     <a href="#AUTHORS">AUTHORS</a>
     <a href="#SEE-ALSO">SEE ALSO</a>
-    </div>
+  </div>
 
   <ol class='man-decor man-head man head'>
     <li class='tl'>hub(1)</li>
@@ -162,9 +162,10 @@ Submodule repository "git://github.com/<var>USER</var>/<var>REPOSITORY</var>.git
 your GitHub login. With <code>-p</code>, use private remote
 "git@github.com:<var>USER</var>/<var>REPOSITORY</var>.git".</p></li>
 <li><p><code>git fork</code> [<code>--no-remote</code>]:
-Forks the original project (referenced by "origin" remote) on GitHub and
-adds a new remote for it under your username. Requires <code>github.token</code> to
-be set (see CONFIGURATION).</p></li>
+Forks the original project (referenced by "origin" remote) on GitHub,
+changes "origin" to point at the fork and adds a new remote for the old
+origin under "upstream". Requires <code>github.token</code> to be set (see
+CONFIGURATION).</p></li>
 <li><p><code>git help</code>:
 Display enhanced <span class="man-ref">git-help<span class="s">(1)</span></span>.</p></li>
 </ul>
@@ -361,7 +362,7 @@ $ git help hub
 
   <ol class='man-decor man-foot man foot'>
     <li class='tl'>DEFUNKT</li>
-    <li class='tc'>December 2010</li>
+    <li class='tc'>May 2011</li>
     <li class='tr'>hub(1)</li>
   </ol>
 

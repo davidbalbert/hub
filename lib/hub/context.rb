@@ -155,5 +155,9 @@ module Hub
     def current_dirname
       DIRNAME
     end
+
+    def origin_url
+      GIT_CONFIG['config remote.origin.url']
+    end
   end
 end

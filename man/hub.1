@@ -1,7 +1,7 @@
 .\" generated with Ronn/v0.7.3
 .\" http://github.com/rtomayko/ronn/tree/0.7.3
 .
-.TH "HUB" "1" "December 2010" "DEFUNKT" "Git Manual"
+.TH "HUB" "1" "May 2011" "DEFUNKT" "Git Manual"
 .
 .SH "NAME"
 \fBhub\fR \- git + hub = github
@@ -112,7 +112,7 @@ Sets the url of remote \fIREMOTE\-NAME\fR using the same rules as \fBgit remote 
 Submodule repository "git://github\.com/\fIUSER\fR/\fIREPOSITORY\fR\.git" into \fIDIRECTORY\fR as with git\-submodule(1)\. When \fIUSER\fR/ is omitted, assumes your GitHub login\. With \fB\-p\fR, use private remote "git@github\.com:\fIUSER\fR/\fIREPOSITORY\fR\.git"\.
 .
 .IP "\(bu" 4
-\fBgit fork\fR [\fB\-\-no\-remote\fR]: Forks the original project (referenced by "origin" remote) on GitHub and adds a new remote for it under your username\. Requires \fBgithub\.token\fR to be set (see CONFIGURATION)\.
+\fBgit fork\fR [\fB\-\-no\-remote\fR]: Forks the original project (referenced by "origin" remote) on GitHub, changes "origin" to point at the fork and adds a new remote for the old origin under "upstream"\. Requires \fBgithub\.token\fR to be set (see CONFIGURATION)\.
 .
 .IP "\(bu" 4
 \fBgit help\fR: Display enhanced git\-help(1)\.
